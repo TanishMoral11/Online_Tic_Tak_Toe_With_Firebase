@@ -3,11 +3,11 @@
   <component name="deploymentTargetSelector">
     <selectionStates>
       <SelectionState runConfigName="app">
-        <option name="selectionMode" value="DIALOG" />
-        <DropdownSelection timestamp="2024-06-18T19:52:53.620499600Z">
+        <option name="selectionMode" value="DROPDOWN" />
+        <DropdownSelection timestamp="2024-06-28T20:43:03.742728600Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="Default" identifier="serial=192.168.1.37:41603;connection=8411a34e" />
+              <DeviceId pluginId="Default" identifier="serial=192.168.1.35:38021;connection=4209624f" />
             </handle>
           </Target>
         </DropdownSelection>

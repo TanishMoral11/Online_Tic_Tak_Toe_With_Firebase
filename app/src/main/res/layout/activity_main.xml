@@ -5,80 +5,103 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:layout_margin="16dp"
     android:orientation="vertical"
     tools:context=".MainActivity"
     android:background="@drawable/background">
 
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:textStyle="bold"
-        android:textSize="28sp"
-        android:layout_margin="8dp"
-        android:padding="8dp"
-        />
-    <Button
-        android:id="@+id/play_offline_btn"
-        android:text="Play offline"
-        android:layout_margin="8dp"
-        android:padding="8dp"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
+        android:orientation="horizontal"
+        android:gravity="top|start">
 
+        <ImageView
+            android:id="@+id/music_toggle"
+            android:layout_width="66dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:clickable="true"
+            android:contentDescription="Music toggle"
+            android:onClick="toggleMusicStatus"
+            android:src="@drawable/ic_music_on" />
+    </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Or"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:layout_margin="8dp"
-        android:padding="8dp"
-        />
-
-    <Button
-        android:id="@+id/create_online_game_btn"
-        android:text="Create Game Online"
-        android:layout_margin="8dp"
-        android:padding="8dp"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Or"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:layout_margin="8dp"
-        android:padding="8dp"
-        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            />
 
-    <EditText
-        android:id="@+id/game_id_input"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:inputType="number"
-        android:layout_margin="8dp"
-        android:padding="8dp"
-        android:hint="Enter Game ID"
-        />
+        <Button
+            android:id="@+id/play_offline_btn"
+            android:text="Play offline"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
 
-    <Button
-        android:id="@+id/join_online_btn"
-        android:text="Join Game Online"
-        android:layout_margin="8dp"
-        android:padding="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Or"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            />
 
+        <Button
+            android:id="@+id/create_online_game_btn"
+            android:text="Create Game Online"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Or"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            />
+
+        <EditText
+            android:id="@+id/game_id_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:hint="Enter Game ID"
+            />
+
+        <Button
+            android:id="@+id/join_online_btn"
+            android:text="Join Game Online"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
 </LinearLayout>
