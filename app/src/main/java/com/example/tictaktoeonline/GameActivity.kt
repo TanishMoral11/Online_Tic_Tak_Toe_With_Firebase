@@ -1,5 +1,6 @@
 package com.example.tictaktoeonline
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
@@ -11,7 +12,7 @@ import com.example.tictaktoeonline.databinding.ActivityGameBinding
 
 class GameActivity : AppCompatActivity(), View.OnClickListener {
 
-    lateinit var binding: ActivityGameBinding
+    private lateinit var binding: ActivityGameBinding
     private var gameModel: GameModel? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,6 +49,7 @@ class GameActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
+    @SuppressLint("SetTextI18n")
     fun setUI() {
         gameModel?.apply {
             binding.btn0.text = filledPos[0]
