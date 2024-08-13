@@ -15,7 +15,7 @@ import kotlin.random.Random
 import kotlin.random.nextInt
 
 class MainActivity : AppCompatActivity() {
-    lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
     private var musicPlaying = true // Initially music is playing
 
     override fun onCreate(savedInstanceState: Bundle?) {
